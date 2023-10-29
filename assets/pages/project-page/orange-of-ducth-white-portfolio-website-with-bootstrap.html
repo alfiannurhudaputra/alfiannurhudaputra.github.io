@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- character set  -->
+    <meta charset="UTF-8">
+    <!-- let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web title -->
+    <title>Project - Orange Of Ducth White Portfolio Website With Bootstrap</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- import google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet" />
+    <!-- my css -->
+    <link rel="stylesheet" href="/css/css-reset.css" />
+    <link rel="stylesheet" href="/css/pages/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap.css" />
+</head>
+
+<body>
+    <!-- header menu -->
+    <header>
+        <div class="header-container">
+            <!-- brand -->
+            <div class="logo">
+                <a href="/index.html"><span class="highlight">Alfian Nurhuda Putra</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- main menu -->
+    <main>
+        <!-- overview -->
+        <section id="overview-section">
+            <div class="overview-container">
+                <div class="overview-wrapper">
+                    <!-- overview title -->
+                    <div class="overview-title">
+                        <h1> Overview - Project : Orange Of Ducth White Portfolio Website With Bootstrap</h1>
+                        <div class="overview-p">
+                            <p><i class="fa-solid fa-user"></i> Alfian Nurhuda Putra</p>
+                            <p><i class="fa-solid fa-calendar-days"></i> Monday, 02 October 2023</p>
+                        </div>
+                    </div>
+                    <!-- overview subtitle -->
+                    <div class="overview-subtitle">
+                        <h2><i class="fa-solid fa-code"></i> Current Version</h2>
+                        <p>Below are current versions of the project I worked on in this session.</p>
+                    </div>
+                    <!-- slideshow -->
+                    <div class="slideshow-container">
+                        <!-- slide 01 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 1 / 4</div>
+                            <img onclick="openModal('slideshow-modal-1')"
+                                src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-01.webp"
+                                alt="Version 1.0 - Home and About Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 1.0 - Home and About Menu</div>
+                        </div>
+                        <!-- slide 02 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 2 / 4</div>
+                            <img onclick="openModal('slideshow-modal-2')"
+                                src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-02.webp"
+                                alt="Version 1.0 - Experience and Education Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 1.0 - Experience and Education
+                                Menu</div>
+                        </div>
+                        <!-- slide 03 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 3 / 4</div>
+                            <img onclick="openModal('slideshow-modal-3')"
+                                src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-03.webp"
+                                alt="Version 1.0 - Skills and Interest Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 1.0 - Skills and Interest Menu
+                            </div>
+                        </div>
+                        <!-- slide 04 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 4 / 4</div>
+                            <img onclick="openModal('slideshow-modal-4')"
+                                src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-04.webp"
+                                alt="Version 1.0 - Award and Contact Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 1.0 - Award, Contact and Footer
+                                Menu</div>
+                        </div>
+                        <!-- add more slideshow items here -->
+                        <!-- prev and next buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <!-- dot menu container -->
+                        <div class="dot-menu-container">
+                            <!-- dot menu -->
+                            <div class="dot-menu">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- slideshow modals -->
+                    <!-- slideshow modal 01 -->
+                    <div id="slideshow-modal-1" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-01.webp"
+                                alt="Version 1.0 - Home and About Menu">
+                        </div>
+                    </div>
+                    <!-- slideshow modal 02 -->
+                    <div id="slideshow-modal-2" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-02.webp"
+                                alt="Version 1.0 - Experience and Education Menu">
+                        </div>
+                    </div>
+                    <!-- slideshow modal 03 -->
+                    <div id="slideshow-modal-3" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-03.webp"
+                                alt="Version 1.0 - Skills and Interest Menu">
+                        </div>
+                    </div>
+                    <!-- slideshow modal 04 -->
+                    <div id="slideshow-modal-4" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/p3-oodwpwwb.v.1-desktop-home-menu-04.webp"
+                                alt="Version 1.0 - Award and Contact Menu">
+                        </div>
+                    </div>
+                    <!-- add more slideshow modal items here -->
+                    <!-- version of project -->
+                    <div class="build-version">
+                        <h3 id="update-history"><i class="fa-solid fa-code-commit"></i> Update History</h3>
+                        <!-- accordions -->
+                        <div class="accordion">
+                            <!-- accordion note 01 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 1.0
+                                (note)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- accordion list-->
+                                    <ul class="ul-content">
+                                        <li>Release date :
+                                            <ul>
+                                                <li>Monday, 02 October 2023</li>
+                                            </ul>
+                                        </li>
+                                        <li>Last update :
+                                            <ul>
+                                                <li>Monday, 23 October 2023</li>
+                                            </ul>
+                                        </li>
+                                        <li>Font script :
+                                            <ul>
+                                                <li>Roboto Slab by Google Font for body website</li>
+                                                <li>Lora by Google Font for title website</li>
+                                                <li>Font icon by Fontawesome</li>
+                                            </ul>
+                                        </li>
+                                        <li>Created by :
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>Bootstrap</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- accordion interface 01 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 1.0
+                                (interface)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- accordion filter buttons1 -->
+                                    <div id="filter-buttons1" class="button-menu">
+                                        <button class="black-button1" onclick="filter1('all')" data-category1="all"><i
+                                                class="fa-solid fa-expand"></i> All View</button>
+                                        <button onclick="filter1('size-01')" data-category1="size-01"><i
+                                                class="fa-solid fa-desktop"></i> Desktop View</button>
+                                        <button onclick="filter1('size-02')" data-category1="size-02"><i
+                                                class="fa-solid fa-tablet-screen-button"></i> Tablet View</button>
+                                        <button onclick="filter1('size-03')" data-category1="size-03"><i
+                                                class="fa-solid fa-mobile-screen"></i> Mobile View</button>
+                                    </div>
+                                    <!-- project image -->
+                                    <div class="project-main">
+                                        <!-- desktop view -->
+                                        <!-- image desktop 01 -->
+                                        <div class="project-item size-01">
+                                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/view-p3-oodwpwwb.v.1-desktop-home-menu.webp"
+                                                alt="Desktop view for Home Menu">
+                                            <h4 onclick="openModal('accordion1-modal-1')"><i
+                                                    class="fa-solid fa-image"></i> View Details for Desktop</h4>
+                                        </div>
+                                        <!-- tablet view -->
+                                        <!-- image tablet 01 -->
+                                        <div class="project-item size-02">
+                                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/view-p3-oodwpwwb.v.1-tablet-home-menu.webp"
+                                                alt="Tablet view for Home Menu">
+                                            <h4 onclick="openModal('accordion1-modal-2')"><i
+                                                    class="fa-solid fa-image"></i> View Details for Tablet</h4>
+                                        </div>
+                                        <!-- add more tablet items here -->
+                                        <!-- mobile view -->
+                                        <!-- image mobile 01 -->
+                                        <div class="project-item size-03">
+                                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/view-p3-oodwpwwb.v.1-mobile-home-menu.webp"
+                                                alt="Mobile view for Home Menu">
+                                            <h4 onclick="openModal('accordion1-modal-3')"><i
+                                                    class="fa-solid fa-image"></i> View Details for Mobile</h4>
+                                        </div>
+                                        <!-- add more mobile items here -->
+                                    </div>
+                                    <!-- accordion1 modals -->
+                                    <!-- accordion1 madal 01 -->
+                                    <div id="accordion1-modal-1" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/view-p3-oodwpwwb.v.1-desktop-home-menu.webp"
+                                                alt="Desktop view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 02 -->
+                                    <div id="accordion1-modal-2" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/view-p3-oodwpwwb.v.1-tablet-home-menu.webp"
+                                                alt="Tablet view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 03 -->
+                                    <div id="accordion1-modal-3" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap/view-p3-oodwpwwb.v.1-mobile-home-menu.webp"
+                                                alt="Mobile view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- add more accordion modal items here -->
+                                    <!-- project line -->
+                                    <div class="project-bottom-line"></div>
+                                    <!-- back to update -->
+                                    <div class="back-to-update">
+                                        <a href="#update-history"><i class="fa-solid fa-arrow-up"></i> Back to Update
+                                            History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image reference -->
+                    <div class="build-version accordion-bottom">
+                        <h3 id="image-reference"><i class="fa-solid fa-image"></i> Image Reference</h3>
+                        <div class="accordion">
+                            <!-- accordion image 01 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 1.0
+                                (image)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- image 01 -->
+                                    <ul class="ul-content">
+                                        <li>From Freepik :
+                                            <ul>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/young-programmer-working-laptop-computer-cartoon-character_33906144.htm" target="_blank">Free
+                                                        vector young programmer working on laptop computer in cartoon
+                                                        character</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/collection-hand-drawn-profile-icon_17742894.htm" target="_blank">Collection
+                                                        of hand drawn profile icon</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/isometric-office-building_2850431.htm" target="_blank">Isometric
+                                                        office building</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/school-buildings-isometric-icons-set_3792171.htm" target="_blank">School
+                                                        buildings isometric icons set</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/nice-football-player_884535.htm" target="_blank">Nice
+                                                        football player</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/flat-assortment-men-running_1114081.htm" target="_blank">Flat
+                                                        assortment of men running</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/cyclist-man-riding-bicycle-isolated_18376454.htm" target="_blank">A
+                                                        cyclist man riding a bicycle isolated</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/realistic-golden-luxury-certificate_17755512.htm" target="_blank">Realistic
+                                                        golden luxury certificate</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/gradient-colored-modern-certificate_14485840.htm" target="_blank">Gradient
+                                                        colored modern certificate</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/certificate-template_25837605.htm" target="_blank">Certificate
+                                                        template</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>From Unsplash :
+                                            <ul>
+                                                <li><a href="https://unsplash.com/photos/U2eUlPEKIgU" target="_blank">Dream Big text</a>
+                                                </li>
+                                                <li><a href="https://unsplash.com/photos/Z1HXJQ2aWIA" target="_blank">fuel your passion
+                                                        text</a></li>
+                                                <li><a href="https://unsplash.com/photos/oqStl2L5oxI" target="_blank">Do Something Great
+                                                        neon sign</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- add more link items here -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- footer menu -->
+    <footer>
+        <!-- copyright -->
+        <section id="footer-section">
+            <div class="footer-container">
+                <!-- copyright by -->
+                <div class="footer-text-one">&copy; 2023 Alfian Nurhuda Putra - All rights reserved.</div>
+                <div class="footer-line">
+                    <!-- powered by -->
+                    <div class="footer-text-two"><i class="fa-solid fa-code"></i> Powered by HTML/CSS and Bootstrap
+                    </div>
+                    <!-- love and passion -->
+                    <div class="footer-text-three">❤️ Created by Alfian with love and passion 🔥</div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- loader -->
+    <div class="loader"></div>
+    <!-- js script -->
+    <script src="/js/pages/project-page/orange-of-ducth-white-portfolio-website-with-bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- character set  -->
+    <meta charset="UTF-8">
+    <!-- let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- web title -->
+    <title>Project - Software Engineering Fundamental Course RevoU Batch 13</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- import google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
+        rel="stylesheet" />
+    <!-- my css -->
+    <link rel="stylesheet" href="/css/css-reset.css" />
+    <link rel="stylesheet" href="/css/pages/project-page/software-engineering-fundamental-course-revou-batch-13.css" />
+</head>
+
+<body>
+    <!-- header menu -->
+    <header>
+        <div class="header-container">
+            <!-- brand -->
+            <div class="logo">
+                <a href="/index.html"><span class="highlight">Alfian Nurhuda Putra</span></a>
+            </div>
+        </div>
+    </header>
+    <!-- main menu -->
+    <main>
+        <!-- overview -->
+        <section id="overview-section">
+            <div class="overview-container">
+                <div class="overview-wrapper">
+                    <!-- overview title -->
+                    <div class="overview-title">
+                        <h1> Overview - Project : Software Engineering Fundamental
+                            Course RevoU Batch 13</h1>
+                        <div class="overview-p">
+                            <p><i class="fa-solid fa-user"></i> Alfian Nurhuda Putra</p>
+                            <p><i class="fa-solid fa-calendar-days"></i> Thursday, 23 February 2023</p>
+                        </div>
+                    </div>
+                    <!-- overview subtitle -->
+                    <div class="overview-subtitle">
+                        <h2><i class="fa-solid fa-code"></i> Current Version</h2>
+                        <p>Below are current versions of the project I worked on in this session.</p>
+                    </div>
+                    <!-- slideshow -->
+                    <div class="slideshow-container">
+                        <!-- slide 01 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 1 / 4</div>
+                            <img onclick="openModal('slideshow-modal-1')"
+                                src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-01.webp"
+                                alt="Version 2.0 - Home Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 2.0 - Home Menu</div>
+                        </div>
+                        <!-- slide 02 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 2 / 4</div>
+                            <img onclick="openModal('slideshow-modal-2')"
+                                src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-02.webp"
+                                alt="Version 2.0 - Our Profile Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 2.0 - Our Profile Menu</div>
+                        </div>
+                        <!-- slide 03 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 3 / 4</div>
+                            <img onclick="openModal('slideshow-modal-3')"
+                                src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-03.webp"
+                                alt="Version 2.0 - Portfolio Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 2.0 - Portfolio Menu</div>
+                        </div>
+                        <!-- slide 04 -->
+                        <div class="myslides fade">
+                            <div class="numbertext"><i class="fa-solid fa-angles-right"></i> 4 / 4</div>
+                            <img onclick="openModal('slideshow-modal-4')"
+                                src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-04.webp"
+                                alt="Version 2.0 - Message Menu" style="width:100%">
+                            <div class="text"><i class="fa-solid fa-image"></i> Version 2.0 - Message Menu</div>
+                        </div>
+                        <!-- add more slideshow items here -->
+                        <!-- prev and next buttons -->
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        <!-- dot menu container -->
+                        <div class="dot-menu-container">
+                            <!-- dot menu -->
+                            <div class="dot-menu">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- slideshow modals -->
+                    <!-- slideshow modal 01 -->
+                    <div id="slideshow-modal-1" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-01.webp"
+                                alt="Version 2.0 - Home Menu">
+                        </div>
+                    </div>
+                    <!-- slideshow modal 02 -->
+                    <div id="slideshow-modal-2" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-02.webp"
+                                alt="Version 2.0 - Our Profile Menu">
+                        </div>
+                    </div>
+                    <!-- slideshow modal 03 -->
+                    <div id="slideshow-modal-3" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-03.webp"
+                                alt="Version 2.0 - Portfolio Menu">
+                        </div>
+                    </div>
+                    <!-- slideshow modal 04 -->
+                    <div id="slideshow-modal-4" class="modal">
+                        <div class="modal-content">
+                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/p1-sefcrb13.v.2-04.webp"
+                                alt="Version 2.0 - Message Menu">
+                        </div>
+                    </div>
+                    <!-- add more slideshow modal items here -->
+                    <!-- version of project -->
+                    <div class="build-version">
+                        <h3 id="update-history"><i class="fa-solid fa-code-commit"></i> Update History</h3>
+                        <!-- accordions -->
+                        <div class="accordion">
+                            <!-- accordion note 01 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 1.0
+                                (note)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- accordion list-->
+                                    <ul class="ul-content">
+                                        <li>Release date :
+                                            <ul>
+                                                <li>Thursday, 23 February 2023</li>
+                                            </ul>
+                                        </li>
+                                        <li>Font script :
+                                            <ul>
+                                                <li>Poppins by Google Font</li>
+                                            </ul>
+                                        </li>
+                                        <li>Created by :
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- accordion interface 01 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 1.0
+                                (interface)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- accordion filter buttons1 -->
+                                    <div id="filter-buttons1" class="button-menu">
+                                        <button class="black-button1" onclick="filter1('all')" data-category1="all"><i
+                                                class="fa-solid fa-expand"></i> All View</button>
+                                        <button onclick="filter1('size-01')" data-category1="size-01"><i
+                                                class="fa-solid fa-desktop"></i> Desktop View</button>
+                                        <button onclick="filter1('size-02')" data-category1="size-02"><i
+                                                class="fa-solid fa-tablet-screen-button"></i> Tablet View</button>
+                                        <button onclick="filter1('size-03')" data-category1="size-03"><i
+                                                class="fa-solid fa-mobile-screen"></i> Mobile View</button>
+                                    </div>
+                                    <!-- project image -->
+                                    <div class="project-main">
+                                        <!-- desktop view -->
+                                        <!-- image desktop 01 -->
+                                        <div class="project-item size-01">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-desktop-home-menu.webp"
+                                                alt="Desktop view for Home Menu">
+                                            <h4 onclick="openModal('accordion1-modal-1')"><i
+                                                    class="fa-solid fa-desktop"></i> View Details Home</h4>
+                                        </div>
+                                        <!-- image desktop 02 -->
+                                        <div class="project-item size-01">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-desktop-our-profile-menu.webp"
+                                                alt="Desktop view for Our Profile Menu">
+                                            <h4 onclick="openModal('accordion1-modal-2')"><i
+                                                    class="fa-solid fa-desktop"></i> View Details Our Profile</h4>
+                                        </div>
+                                        <!-- image desktop 03 -->
+                                        <div class="project-item size-01">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-desktop-portfolio-menu.webp"
+                                                alt="Desktop view for Portfolio Menu">
+                                            <h4 onclick="openModal('accordion1-modal-3')"><i
+                                                    class="fa-solid fa-desktop"></i> View Details Portfolio</h4>
+                                        </div>
+                                        <!-- add more desktop items here -->
+                                        <!-- tablet view -->
+                                        <!-- image tablet 01 -->
+                                        <div class="project-item size-02">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-tablet-home-menu.webp"
+                                                alt="Tablet view for Home Menu">
+                                            <h4 onclick="openModal('accordion1-modal-4')"><i
+                                                    class="fa-solid fa-tablet-screen-button"></i> View Details Home</h4>
+                                        </div>
+                                        <!-- image tablet 02 -->
+                                        <div class="project-item size-02">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-tablet-our-profile-menu.webp"
+                                                alt="Tablet view for Our Profile Menu">
+                                            <h4 onclick="openModal('accordion1-modal-5')"><i
+                                                    class="fa-solid fa-tablet-screen-button"></i> View Details Our
+                                                Profile</h4>
+                                        </div>
+                                        <!-- image tablet 03 -->
+                                        <div class="project-item size-02">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-tablet-portfolio-menu.webp"
+                                                alt="Tablet view for Portfolio Menu">
+                                            <h4 onclick="openModal('accordion1-modal-6')"><i
+                                                    class="fa-solid fa-tablet-screen-button"></i> View Details Portfolio
+                                            </h4>
+                                        </div>
+                                        <!-- add more tablet items here -->
+                                        <!-- mobile view -->
+                                        <!-- image mobile 01 -->
+                                        <div class="project-item size-03">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-mobile-home-menu.webp"
+                                                alt="Mobile view for Home Menu">
+                                            <h4 onclick="openModal('accordion1-modal-7')"><i
+                                                    class="fa-solid fa-mobile-screen"></i> View Details Home</h4>
+                                        </div>
+                                        <!-- image mobile 02 -->
+                                        <div class="project-item size-03">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-mobile-our-profile-menu.webp"
+                                                alt="Mobile view for Our Profile Menu">
+                                            <h4 onclick="openModal('accordion1-modal-8')"><i
+                                                    class="fa-solid fa-mobile-screen"></i> View Details Our Profile</h4>
+                                        </div>
+                                        <!-- image mobile 03 -->
+                                        <div class="project-item size-03">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-mobile-portfolio-menu.webp"
+                                                alt="Mobile view for Portfolio Menu">
+                                            <h4 onclick="openModal('accordion1-modal-9')"><i
+                                                    class="fa-solid fa-mobile-screen"></i> View Details Portfolio</h4>
+                                        </div>
+                                        <!-- add more mobile items here -->
+                                    </div>
+                                    <!-- accordion1 modals -->
+                                    <!-- accordion1 madal 01 -->
+                                    <div id="accordion1-modal-1" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-desktop-home-menu.webp"
+                                                alt="Desktop view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 02 -->
+                                    <div id="accordion1-modal-2" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-desktop-our-profile-menu.webp"
+                                                alt="Desktop view for Our Profile Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 03 -->
+                                    <div id="accordion1-modal-3" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-desktop-portfolio-menu.webp"
+                                                alt="Desktop view for Portfolio Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 04 -->
+                                    <div id="accordion1-modal-4" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-tablet-home-menu.webp"
+                                                alt="Tablet view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 05 -->
+                                    <div id="accordion1-modal-5" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-tablet-our-profile-menu.webp"
+                                                alt="Tablet view for Our Profile Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 06 -->
+                                    <div id="accordion1-modal-6" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-tablet-portfolio-menu.webp"
+                                                alt="Tablet view for Portfolio Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 07 -->
+                                    <div id="accordion1-modal-7" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-mobile-home-menu.webp"
+                                                alt="Mobile view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 08 -->
+                                    <div id="accordion1-modal-8" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-mobile-our-profile-menu.webp"
+                                                alt="Mobile view for Our Profile Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion1 madal 09 -->
+                                    <div id="accordion1-modal-9" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.1-mobile-portfolio-menu.webp"
+                                                alt="Mobile view for Portfolio Menu">
+                                        </div>
+                                    </div>
+                                    <!-- add more accordion modal items here -->
+                                    <!-- project line -->
+                                    <div class="project-bottom-line"></div>
+                                    <!-- back to update -->
+                                    <div class="back-to-update">
+                                        <a href="#update-history"><i class="fa-solid fa-arrow-up"></i> Back to Update
+                                            History</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- accordion note 02 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 2.0
+                                (note)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- accordion list-->
+                                    <ul class="ul-content">
+                                        <li>Release date :
+                                            <ul>
+                                                <li>Wednesday, 16 August 2023</li>
+                                            </ul>
+                                        </li>
+                                        <li>Last update :
+                                            <ul>
+                                                <li>Wednesday, 20 August 2023</li>
+                                            </ul>
+                                        </li>
+                                        <li>Font script :
+                                            <ul>
+                                                <li>Poppins by Google Font</li>
+                                                <li>Add font icon by Fontawesome</li>
+                                            </ul>
+                                        </li>
+                                        <li>Created by :
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>CSS</li>
+                                                <li>JavaScript</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- accordion interface 02 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 2.0
+                                (interface)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- accordion filter buttons2 -->
+                                    <div id="filter-buttons2" class="button-menu">
+                                        <button class="black-button2" onclick="filter2('all2')" data-category2="all"><i
+                                                class="fa-solid fa-expand"></i> All View</button>
+                                        <button onclick="filter2('size-01')" data-category2="size-01"><i
+                                                class="fa-solid fa-desktop"></i> Desktop View</button>
+                                        <button onclick="filter2('size-02')" data-category2="size-02"><i
+                                                class="fa-solid fa-tablet-screen-button"></i> Tablet View</button>
+                                        <button onclick="filter2('size-03')" data-category2="size-03"><i
+                                                class="fa-solid fa-mobile-screen"></i> Mobile View</button>
+                                    </div>
+                                    <!-- project image -->
+                                    <div class="project-main">
+                                        <!-- desktop view -->
+                                        <!-- image desktop 01 -->
+                                        <div class="project-item2 size-01">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-home-menu.webp"
+                                                alt="Desktop view for Home Menu">
+                                            <h4 onclick="openModal('accordion2-modal-1')"><i
+                                                    class="fa-solid fa-desktop"></i> View Details Home</h4>
+                                        </div>
+                                        <!-- image desktop 02 -->
+                                        <div class="project-item2 size-01">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-our-profile-menu.webp"
+                                                alt="Desktop view for Our Profile Menu">
+                                            <h4 onclick="openModal('accordion2-modal-2')"><i
+                                                    class="fa-solid fa-desktop"></i> View Details Our Profile</h4>
+                                        </div>
+                                        <!-- image desktop 03 -->
+                                        <div class="project-item2 size-01">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-portfolio-menu.webp"
+                                                alt="Desktop view for Portfolio Menu">
+                                            <h4 onclick="openModal('accordion2-modal-3')"><i
+                                                    class="fa-solid fa-desktop"></i> View Details Portfolio</h4>
+                                        </div>
+                                        <!-- image desktop 04 -->
+                                        <div class="project-item2 size-01">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-message-menu.webp"
+                                                alt="Desktop view for Message Menu">
+                                            <h4 onclick="openModal('accordion2-modal-4')"><i
+                                                    class="fa-solid fa-desktop"></i> View Details Message</h4>
+                                        </div>
+                                        <!-- add more desktop items here -->
+                                        <!-- tablet view -->
+                                        <!-- image tablet 01 -->
+                                        <div class="project-item2 size-02">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-home-menu.webp"
+                                                alt="Tablet view for Home Menu">
+                                            <h4 onclick="openModal('accordion2-modal-5')"><i
+                                                    class="fa-solid fa-tablet-screen-button"></i> View Details Home</h4>
+                                        </div>
+                                        <!-- image tablet 02 -->
+                                        <div class="project-item2 size-02">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-our-profile-menu.webp"
+                                                alt="Tablet view for Our Profile Menu">
+                                            <h4 onclick="openModal('accordion2-modal-6')"><i
+                                                    class="fa-solid fa-tablet-screen-button"></i> View Details Our
+                                                Profile</h4>
+                                        </div>
+                                        <!-- image tablet 03 -->
+                                        <div class="project-item2 size-02">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-portfolio-menu.webp"
+                                                alt="Tablet view for Portfolio Menu">
+                                            <h4 onclick="openModal('accordion2-modal-7')"><i
+                                                    class="fa-solid fa-tablet-screen-button"></i> View Details Portfolio
+                                            </h4>
+                                        </div>
+                                        <!-- image tablet 04 -->
+                                        <div class="project-item2 size-02">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-message-menu.webp"
+                                                alt="Tablet view for Message Menu">
+                                            <h4 onclick="openModal('accordion2-modal-8')"><i
+                                                    class="fa-solid fa-tablet-screen-button"></i> View Details Message
+                                            </h4>
+                                        </div>
+                                        <!-- add more tablet items here -->
+                                        <!-- mobile view -->
+                                        <!-- image mobile 01 -->
+                                        <div class="project-item2 size-03">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-home-menu.webp"
+                                                alt="Mobile view for Home Menu">
+                                            <h4 onclick="openModal('accordion2-modal-9')"><i
+                                                    class="fa-solid fa-mobile-screen"></i> View Details Home</h4>
+                                        </div>
+                                        <!-- image mobile 02 -->
+                                        <div class="project-item2 size-03">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-our-profile-menu.webp"
+                                                alt="Mobile view for Our Profile Menu">
+                                            <h4 onclick="openModal('accordion2-modal-10')"><i
+                                                    class="fa-solid fa-mobile-screen"></i> View Details Our Profile</h4>
+                                        </div>
+                                        <!-- image mobile 03 -->
+                                        <div class="project-item2 size-03">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-portfolio-menu.webp"
+                                                alt="Mobile view for Portfolio Menu">
+                                            <h4 onclick="openModal('accordion2-modal-11')"><i
+                                                    class="fa-solid fa-mobile-screen"></i> View Details Portfolio</h4>
+                                        </div>
+                                        <!-- image mobile 04 -->
+                                        <div class="project-item2 size-03">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-message-menu.webp"
+                                                alt="Mobile view for Message Menu">
+                                            <h4 onclick="openModal('accordion2-modal-12')"><i
+                                                    class="fa-solid fa-mobile-screen"></i> View Details Message</h4>
+                                        </div>
+                                        <!-- add more mobile items here -->
+                                    </div>
+                                    <!-- accordion2 modals -->
+                                    <!-- accordion2 madal 01 -->
+                                    <div id="accordion2-modal-1" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-home-menu.webp"
+                                                alt="Desktop view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 02 -->
+                                    <div id="accordion2-modal-2" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-our-profile-menu.webp"
+                                                alt="Desktop view for Our Profile Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 03 -->
+                                    <div id="accordion2-modal-3" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-portfolio-menu.webp"
+                                                alt="Desktop view for Portfolio Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 04 -->
+                                    <div id="accordion2-modal-4" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-desktop-message-menu.webp"
+                                                alt="Desktop view for Message Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 05 -->
+                                    <div id="accordion2-modal-5" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-home-menu.webp"
+                                                alt="Tablet view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 06 -->
+                                    <div id="accordion2-modal-6" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-our-profile-menu.webp"
+                                                alt="Tablet view for Our Profile Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 07 -->
+                                    <div id="accordion2-modal-7" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-portfolio-menu.webp"
+                                                alt="Tablet view for Portfolio Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 08 -->
+                                    <div id="accordion2-modal-8" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-tablet-message-menu.webp"
+                                                alt="Tablet view for Message Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 09 -->
+                                    <div id="accordion2-modal-9" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-home-menu.webp"
+                                                alt="Mobile view for Home Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 10 -->
+                                    <div id="accordion2-modal-10" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-our-profile-menu.webp"
+                                                alt="Mobile view for Our Profile Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 11 -->
+                                    <div id="accordion2-modal-11" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-portfolio-menu.webp"
+                                                alt="Mobile view for Portfolio Menu">
+                                        </div>
+                                    </div>
+                                    <!-- accordion2 madal 12 -->
+                                    <div id="accordion2-modal-12" class="modal">
+                                        <div class="modal-content">
+                                            <img src="/assets/images/project-page/software-engineering-fundamental-course-revou-batch-13/view-p1-sefcrb13.v.2-mobile-message-menu.webp"
+                                                alt="Mobile view for Message Menu">
+                                        </div>
+                                    </div>
+                                    <!-- add more accordion modal items here -->
+                                    <!-- project line -->
+                                    <div class="project-bottom-line"></div>
+                                    <!-- back to update -->
+                                    <div class="back-to-update">
+                                        <a href="#update-history"><i class="fa-solid fa-arrow-up"></i> Back to Update
+                                            History</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image reference -->
+                    <div class="build-version accordion-bottom">
+                        <h3 id="image-reference"><i class="fa-solid fa-image"></i> Image Reference</h3>
+                        <div class="accordion">
+                            <!-- accordion image 01 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 1.0
+                                (image)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- image 01 -->
+                                    <ul class="ul-content">
+                                        <li>From RevoU :
+                                            <ul>
+                                                <li><a href="https://revou.co/" target="_blank">Revou's logo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>From Taradiviaksa :
+                                            <ul>
+                                                <li><a href="https://taradiviaksa.co.id/perusahaan/" target="_blank">Nilai
+                                                        perusahaan</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>From Unsplash :
+                                            <ul>
+                                                <li><a href="https://unsplash.com/photos/lDlU1zbjGQA" target="_blank">Table lamp on desk
+                                                        inside room</a></li>
+                                                <li><a href="https://unsplash.com/photos/PG8NyM_Mcts" target="_blank">White corner
+                                                        desk</a>
+                                                </li>
+                                                <li><a href="https://unsplash.com/photos/yWwob8kwOCk" target="_blank">Hallway between
+                                                        glass-panel doors</a></li>
+                                                <li><a href="https://unsplash.com/photos/nBRHY7YZ3M0" target="_blank">High-rise
+                                                        building</a></li>
+                                                <li><a href="https://unsplash.com/photos/FBkrQhnLQoY" target="_blank">High building</a>
+                                                </li>
+                                                <li><a href="https://unsplash.com/photos/N2zk9yXjmLA" target="_blank">Low angle photo of
+                                                        beige concrete building under cloudy sky</a></li>
+                                                <li><a href="https://unsplash.com/photos/KHSPGJ3zP0M" target="_blank">Black computer
+                                                        tower on white table</a></li>
+                                                <li><a href="https://unsplash.com/photos/P3PpD5k7jfI" target="_blank">Black flat screen
+                                                        computer monitor</a></li>
+                                                <li><a href="https://unsplash.com/photos/5WJhuXkqCkc" target="_blank">A computer with a
+                                                        blue light</a></li>
+                                                <li><a href="https://unsplash.com/photos/d1Wj9qU5C-o" target="_blank">Black and silver
+                                                        laptop computer on brown wooden table</a></li>
+                                                <li><a href="https://unsplash.com/photos/prBQ83SzZtU" target="_blank">Man in red t-shirt
+                                                        sitting in front of computer</a></li>
+                                                <li><a href="https://unsplash.com/photos/ZiIIigaZfrI" target="_blank">Black computer
+                                                        monitor turned on on brown wooden desk</a></li>
+                                                <li><a href="https://unsplash.com/photos/XrLZODgt81M" target="_blank">A desk with a
+                                                        laptop and a monitor on it</a></li>
+                                                <li><a href="https://unsplash.com/photos/Gh_F_H3pZjo" target="_blank">Silver imac on
+                                                        brown wooden desk</a></li>
+                                                <li><a href="https://unsplash.com/photos/aBwEpdt8VLE" target="_blank">Black flat screen
+                                                        computer monitor on brown wooden desk</a></li>
+                                                <li><a href="black computer monitor keyboard and computer monitor" target="_blank">Black
+                                                        computer monitor keyboard and computer monitor</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- add more link items here -->
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- accordion image 02 -->
+                            <button class="accordion-button"><i class="fa-solid fa-ellipsis"></i> Version 2.0
+                                (image)</button>
+                            <div class="accordion-content">
+                                <div class="build-content">
+                                    <!-- image 02 -->
+                                    <ul class="ul-content">
+                                        <li>From Freepik :
+                                            <ul>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/city-skyline-concept-illustration_24487812.htm" target="_blank">City
+                                                        skyline concept illustration</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.es/vector-gratis/fondo-escritorio-blanco-vector-diseno-moderno-minimalista_18705226.htm" target="_blank">Fondo
+                                                        de escritorio blanco, vector de diseño moderno minimalista</a>
+                                                </li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/flat-summer-yellow-sun-collection-different-styles_26689014.htm" target="_blank">Flat
+                                                        summer yellow sun collection in different styles</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/hand-drawn-clouds-collection_16139543.htm" target="_blank">Hand
+                                                        drawn clouds collection</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/isometric-view-modern-office-building_3290416.htm" target="_blank">Isometric
+                                                        view of modern office building</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/isometric-view-modern-office-building_2974953.htm" target="_blank">Isometric
+                                                        view of modern office building</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/modern-isometric-office-building_2850424.htm" target="_blank">Modern
+                                                        isometric office building</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/brainstorming-concept-landing-page_5757169.htm" target="_blank">Brainstorming
+                                                        concept for landing page</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/gradient-elegant-certificate_14371217.htm" target="_blank">Gradient
+                                                        elegant certificate</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/flat-modern-certificate-appreciation-template_14583061.htm" target="_blank">Flat
+                                                        modern certificate of appreciation template</a></li>
+                                                <li><a
+                                                        href="https://www.freepik.com/free-vector/flat-modern-certificate-template_14455660.htm" target="_blank">Flat
+                                                        modern certificate template</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>From RevoU :
+                                            <ul>
+                                                <li><a href="https://revou.co/" target="_blank">Revou's logo</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>From Taradiviaksa :
+                                            <ul>
+                                                <li><a href="https://taradiviaksa.co.id/perusahaan/" target="_blank">Nilai
+                                                        perusahaan</a></li>
+                                            </ul>
+                                        </li>
+                                        <!-- add more link items here -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- footer menu -->
+    <footer>
+        <!-- copyright -->
+        <section id="footer-section">
+            <div class="footer-container">
+                <!-- copyright by -->
+                <div class="footer-text-one">&copy; 2023 Alfian Nurhuda Putra - All rights reserved.</div>
+                <div class="footer-line">
+                    <!-- powered by -->
+                    <div class="footer-text-two"><i class="fa-solid fa-code"></i> Powered by HTML/CSS and JavaScript
+                    </div>
+                    <!-- love and passion -->
+                    <div class="footer-text-three">❤️ Created by Alfian with love and passion 🔥</div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- loader -->
+    <div class="loader"></div>
+    <!-- js script -->
+    <script src="/js/pages/project-page/software-engineering-fundamental-course-revou-batch-13.js"></script>
+</body>
+
+</html>
