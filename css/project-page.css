@@ -459,13 +459,15 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1px;
-    max-width: 100%;
-    width: 95%;
-    max-height: 90vh;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 85vh;
     overflow-y: auto;
 }
 
 .modal-content img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
@@ -504,6 +506,25 @@ header {
     font-size: 12px;
     margin: -20px 0 5px 0;
     text-align: right;
+}
+
+/* button to top */
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 95px;
+    right: 20px;
+    background-color: #1877F2;
+    color: #F3F3F3;
+    border: none;
+    border-radius: 50%;
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#scroll-to-top:hover {
+    background-color: #0099FF;
 }
 
 /*  responsive for 1200px  */

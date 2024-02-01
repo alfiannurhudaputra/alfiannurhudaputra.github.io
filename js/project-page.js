@@ -1,3 +1,23 @@
+// scroll to
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const headerHeight = 20;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
 // slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -59,7 +79,7 @@ function filter1(category1) {
 
     // check if the category is not 'all' and change the background color of the black-button accordingly
     if (category1 !== 'all') {
-        blackButton.style.backgroundColor = '#0A5AAC';
+        blackButton.style.backgroundColor = '#0040CB';
     } else {
         blackButton.style.backgroundColor = '#303841';
     }
@@ -90,7 +110,7 @@ function filter2(category2) {
 
     // check if the category is not 'all' and change the background color of the black-button accordingly
     if (category2 !== 'all2') {
-        blackButton.style.backgroundColor = '#0A5AAC';
+        blackButton.style.backgroundColor = '#0040CB';
     } else {
         blackButton.style.backgroundColor = '#303841';
     }
@@ -129,3 +149,30 @@ window.onclick = function (event) {
     }
 }
 
+// scroll to top
+// get a reference to the button element
+const scrollToTop = document.getElementById("scroll-to-top");
+
+// show the button when the user scrolls down 20px from the top of the document
+window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTop.style.display = "block";
+    } else {
+        scrollToTop.style.display = "none";
+    }
+};
+
+// scroll to the top of the document when the button is clicked
+scrollToTop.addEventListener("click", function () {
+    // smooth scrolling behavior
+    document.documentElement.style.scrollBehavior = "smooth";
+    // scroll to the top
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+    // reset scrolling behavior to default
+    setTimeout(function () {
+        document.documentElement.style.scrollBehavior = "auto";
+    }, 1000); // adjust the delay
+});

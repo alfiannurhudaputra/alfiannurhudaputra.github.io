@@ -106,9 +106,6 @@ header {
     margin: 0px 3px;
     padding: 10px;
     text-decoration: none;
-}
-
-.ul-nav li a:hover {
     color: #F3F3F3;
 }
 
@@ -248,29 +245,29 @@ li a:hover~span {
     border-radius: 10px;
     padding: 10px 24px;
     color: #F3F3F3;
-    background-color: #303841;
+    background-color: #0D1282;
     border: 1px solid #F3F3F3;
     font-weight: 600;
 }
 
 .hero-button1:hover {
     color: #F3F3F3;
-    background-color: #0040CB;
-    border: 1px solid #0040CB;
+    background-color: #041562;
+    border: 1px solid #F3F3F3;
 }
 
 .hero-button2 {
     margin-left: 5px;
     border-radius: 10px;
     padding: 10px 24px;
-    background-color: #0040CB;
+    background-color: #0138af;
     border: 1px solid #F3F3F3;
     font-weight: 600;
 }
 
 .hero-button2:hover {
     color: #F3F3F3;
-    background-color: #0256cc;
+    background-color: #191BA9;
 }
 
 /* about */
@@ -349,16 +346,6 @@ li a:hover~span {
 .skill-wrapper h2 {
     font-size: 2.5rem;
     margin: 60px 0 20px 0;
-}
-
-/* skill paragraph */
-.skill-wrapper p {
-    font-size: 16px;
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 25px;
 }
 
 .skill-wrapper h3 {
@@ -651,13 +638,14 @@ li a:hover~span {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 1px;
-    max-width: 100%;
+    max-width: 1200px;
     width: 85%;
-    max-height: 90vh;
     overflow-y: auto;
 }
 
 .modal-content img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
     height: auto;
 }
@@ -748,14 +736,14 @@ li a:hover~span {
     transition: all 0.3s ease-in-out;
 }
 
-.info .address:hover i {
-    background: #F3F3F3;
-    color: #EA4335;
-}
-
 .info .email:hover i {
     background: #F3F3F3;
     color: #0489C9;
+}
+
+.info .address:hover i {
+    background: #F3F3F3;
+    color: #EA4335;
 }
 
 .info h5 {
@@ -819,7 +807,7 @@ li a:hover~span {
     position: fixed;
     bottom: 95px;
     right: 20px;
-    background-color: #1877F2;
+    background-color: #0099FF;
     color: #F3F3F3;
     border: none;
     border-radius: 50%;
@@ -829,7 +817,7 @@ li a:hover~span {
 }
 
 #scroll-to-top:hover {
-    background-color: #0099FF;
+    background-color: #1877F2;
 }
 
 /*  responsive for 1200px  */
@@ -975,6 +963,14 @@ li a:hover~span {
 
     .ul-nav li a {
         font-size: 14px;
+    }
+
+    .ul-nav li a:hover {
+        color: #BDCDD6;
+    }
+
+    .ul-nav li span {
+        display: none;
     }
 
     /* main-menu */
